@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./JS/vue.js"></script>
+</head>
+<body>
+    
+    <div id="app">
+            
+    </div>
+    
+    <script>
+        new Vue({
+         el: '#app',
+         data: {
+             msg: 'Hello World',
+             url: "https://www.baidu.com"                 /* 这个url一定要定义在数据模型中 */
+         },
+         
+         methods: {                                      /* 我之前无法生效，可能是单词拼写错误了 */
+             handle: function() {
+                 alert('你点了我一下')
+             }
+         },
+         mounted(){
+            alert("vue挂在完成，不需要调用，直接触发")         /* vue的挂载是什么意思，好像还么学过 */
+         }
+        }
+        )
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>焦点访谈 大国制作</title>
+    
+     <link rel="stylesheet" href="./CSS/newcss.css">                   <!-- 方式三：引入外部样式 -->
+
+     <!-- 
+     本章学习CSS三种选择器的样式 ,第一种就是标签选择器,  第二种叫做id选择器,第三种是class选择器,叫做类选择器
+     Body里面的内容,可以用span标签括起来,如果不用span标签的话,就无法找到这块对应的内容
+     id选择器的值好像不可以用数字，必须得用字符串。   作用范围  id选择器  》类选择器  》标签选择器
+     -->
+     <style>
+         .cls{
+             color: rgb(11, 231, 26);
+         }
+         #time{                                        
+             color: rgb(255, 0, 0);
+         }
+     </style>
+</head>
+<body>
+    <img src="./PICTURE/sina.png" >  大国制作
+    <!-- <h1 style="color: rgb(3, 48, 48);">这里是大国制造，西工大专属制造</h1> -->
+
+    <h1>这里是大国制造，西工大专属制造</h1>
+
+    <hr>
+    <span class="cls">焦点访谈</span>    <span id="time">我最喜欢看了</span>
+    <hr>
+</body>
+</html>
